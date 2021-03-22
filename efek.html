@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--mendeklarasikan file jquery-->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#kotak").fadeOut("slow",function(){ //deklarasi fungsi untuk menghilangkan teks
+					$("#kotak").remove();
+				});
+			}, 3000); //waktu hilangnya huruf
+		});
+	</script>
+	<!--membuat efek yang akan tampil dihalaman web-->
+	<style type="text/css">
+		#kotak{
+			width: 400px;
+			height: 50px;
+			background: lightyellow;
+			border : 1 px solid black;
+			padding: 5px; 
+		}
+	</style>
+</head>
+<body>
+	<!--membuat fungsi teks yang akan menghilang-->
+<h3 id = "kotak">perhatikan baik - baik teks ini, karena teks akan hilang dalam hitungan 3 detik</h3>
+</body>
+</html>

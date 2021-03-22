@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<!--mendeklarasikan file jQuery -->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#kotak1").dblclick(function(){
+				$(".satu").css({
+					'background-color' :'pink'
+				});//membuat fungsi untuk mengubah warna kotak 1
+			});
+			$("#kotak2").dblclick(function(){
+				$(".dua").css({
+					'background-color' :'grey'
+				});//membuat fungsi untuk mengubah warna kotak 2
+			});
+			$("#kotak3").dblclick(function(){
+				$(".tiga").css({
+					'background-color' :'lightblue'
+				});//membuat fungsi untuk mengubah warna kotak 3
+			});
+			$("#kotak4").dblclick(function(){
+				$(".empat").css({
+					'background-color' :'black'
+				});//membuat fungsi untuk mengubah warna kotak 4
+			});
+		});
+	</script>
+	<style >
+	/*untuk membuat kotak yang akan tampil pada halaman web mulai dari warna, ukuran, margin */
+	div {
+	width: 100px;
+	height: 100px;
+	border-style: black;
+	border-width: 2px;
+	border-color: yellow;
+	background-color: yellow;
+	margin-left:15px;
+	float:left;		
+	}
+		.satu{
+			border-radius: 0px; /*membuat kotak1*/
+		}
+		.dua{
+			border-radius: 0px; /*membuat kotak2*/
+		}
+		.tiga{
+			border-radius: 0px; /*membuat kotak3*/
+		}
+		.empat{
+			border-radius: 0px; /*membuat kotak4*/
+		}
+	</style>
+</head>
+<body>
+	<p>kotak ini akan berubah warna apabila user melakukan double klik pada kotak</p>
+<div id= "kotak1" class="satu"></div> <!--memanggil kotak1 yang sudah dibuat pada style-->
+<div id= "kotak2" class="dua"></div> <!--memanggil kotak2 yang sudah dibuat pada style-->
+<div id= "kotak3" class="tiga"></div> <!--memanggil kotak3 yang sudah dibuat pada style-->
+<div id= "kotak4" class="empat"></div> <!--memanggil kotak4 yang sudah dibuat pada style-->
+</body>
+</html>

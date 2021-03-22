@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--mendeklarasikan file jQuery -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#in').click(function(){$(".segi").show("slow")}); //mendeklarasikan fungsi button fade in
+			$("#out").click(function(){$(".segi").hide("slow")}); //mendeklarasikan fungsi button fade out
+			$("#switch").click(function(){
+				$(".segi").css({
+					'background-color' :'salmon'
+				});//mendeklarasikan fungsi button fade to 0.3
+			});	
+		});
+	</script>
+	<style>
+		.segi{
+		width: 200px;
+		height: 200px;
+		border-style: black;
+		border-width: 2px;
+		border-color: black;
+		background-color: yellow;
+		/*membuat kotak dengan warna, ukuran yang diinginkan*/
+		}
+	</style>
+</head>
+<body>
+<h1 class="segi"></h1> <!--membuat h1 untuk memanggil kotak-->
+<button id="in">fade in</button> <!--membuat button fade in-->
+<button id="out">fade out</button> <!--membuat button fade out-->
+<button id="switch">fade to 0.3</button> <!--membuat fade to 0.3-->
+</body>
+</html>

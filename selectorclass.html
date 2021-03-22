@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--mendeklarasikan file jquery-->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning"); //mendeklarasikan class 
+			$(".subdaftar").addClass("kuninghitam");
+		});
+	</script>
+	<!--menampilkan efek pada class-->
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 3px; 
+		}
+		.kuninghitam{
+			color: blue;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<p>Paragraf Pertama</p>
+	<div>
+		<!--membuat selector dengan memanggil nama class-->
+		<ul id="daftar">
+			<li>item 1</li>
+			<li class="subdaftar">item 2</li>
+			<li>item 3</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

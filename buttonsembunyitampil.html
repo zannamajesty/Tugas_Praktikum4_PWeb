@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js"></script> <!--mendeklarasikan dan memanggil file jquery-->
+	<script type="text/javascript">
+	$(document).ready(function(){ 
+		$(".sembunyi").click(function() {$("#foto").hide("slow")}); //mendeklarasikan fungsi button sembunyi
+		$(".tampil").click(function() {$("#foto").show("slow")}); //mendeklarasikan fungsi button tampil
+	});
+	</script>
+</head>
+<body>
+
+<button class="sembunyi">Sembunyikan</button> <!--membuat button dengan text sembunyikan-->
+<button class="tampil">Tampilkan</button> <!--membuat button dengan text tampilkan-->
+<p><img id = "foto" src="logoupn.png"></p> <!--membuat paragraph dengan menampilkan gambar-->
+</body>
+</html>

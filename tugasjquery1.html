@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--mendeklarasikan file jQuery-->
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".Sembunyi").click(function(){$("#foto1").hide("slow")}); //menampilkan button untuk sembunyikan foto1
+			$(".Tampil").click(function(){$("#foto1").show("slow")}); //menampilkan button untuk tampilkan foto1
+			$(".Sembunyi").click(function(){$("#foto2").hide("slow")}); //menampilkan button untuk sembunyikan foto2
+			$(".Tampil").click(function(){$("#foto2").show("slow")}); //menampilkan button untuk tampilkan foto2
+			$(".Sembunyi2").click(function(){$("#foto3").hide("slow")}); //menampilkan button untuk sembunyikan foto3
+			$(".Tampil2").click(function(){$("#foto3").show("slow")}); //menampilkan button untuk tampilkan foto3
+			$(".Sembunyi2").click(function(){$("#foto4").hide("slow")}); //menampilkan button untuk sembunyikan foto4
+			$(".Tampil2").click(function(){$("#foto4").show("slow")}); //menampilkan button untuk tampilkan foto4
+		});
+	</script>
+</head>
+<style>
+		
+	</style>
+<body>
+<button class="Sembunyi">Sembunyikan Gambar</button><!--membuat button untuk sembunyikan-->
+<button class="Tampil">Tampilkan Gambar </button><br><br><!--membuat button untuk tampilkan-->
+<img id="foto1"src="1.jpg" style="height: 240px; width:230px;" > 
+<img id="foto2"src="2.jpg" style="height: 240px; width:230px;"><br><br>
+<button class="Sembunyi2">Sembunyikan gambar</button>
+<button class="Tampil2">Tampilkan gambar</button><br><br>
+<img id="foto3" src="3.jpg" style="height: 230px; width:230px; "> <!--mengatur ukuran foto yang ditampilkan pada halaman web-->
+<img id="foto4" src="4.jpg" style="height: 230px; width:230px; ">
+</body>
+</html>
